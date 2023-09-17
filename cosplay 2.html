@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scarica la tua foto cosplay</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        button {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff4500;
+        }
+
+        footer {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Scarica la tua foto cosplay</h1>
+    </header>
+    <section>
+        <p>Hai a disposizione una settimana per scaricare le foto.</p>
+        <label for="codice">Inserisci il codice "cdrt" per scaricare le tue foto:</label>
+        <input type="text" id="codice">
+        <button onclick="verificaCodice()">Scarica</button>
+        <p id="messaggio"></p>
+    </section>
+    <footer>
+        <p>Non dimenticarti di seguirci su Instagram: <a href="https://www.instagram.com/_amo_la_fotografia/" target="_blank">@_amo_la_fotografia</a></p>
+    </footer>
+    <script>
+        function verificaCodice() {
+            var codiceInserito = document.getElementById("codice").value;
+            if (codiceInserito === "cdrt") {
+                window.location.href = "https://we.tl/t-z2emv3M6QL";
+            } else {
+                document.getElementById("messaggio").innerHTML = "Questo codice non è valido";
+            }
+        }
+    </script>
+</body>
+</html>
