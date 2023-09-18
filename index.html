@@ -66,6 +66,8 @@
             var codiceInserito = document.getElementById("codice").value;
             if (codiceInserito === "cdrt") {
                 window.location.href = "https://wetransfer.com/downloads/930f6a5a98672168b1c267cb759f4a9e20230917140840/60c6a1/preview/894672d32e1f0c9e940592ad58278ab720230917140902";
+            } else if (codiceInserito === "thing") {
+                window.open("https://www.thingiverse.com", "_blank");
             } else {
                 document.getElementById("messaggio").innerHTML = "Questo codice non è valido";
             }
